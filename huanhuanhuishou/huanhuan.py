@@ -3,7 +3,7 @@ import requests
 import execjs
 
 """
-换换回收价格数据js破解，网址：https://www.huanhuanhuishou.com
+ 换换回收价格数据js破解，网址：https://www.huanhuanhuishou.com
 """
 
 conn = requests.post(
