@@ -40,10 +40,7 @@ def login(phone, password):
 
 if __name__ == "__main__":
     # 手机号码或者邮箱
-    tel = "13688888888"
+    tel = "18126351541"
     # 登录密码
-    tel_pwd = "13688888888"
+    tel_pwd = "root0503"
     login(tel, tel_pwd)
-
-
-
