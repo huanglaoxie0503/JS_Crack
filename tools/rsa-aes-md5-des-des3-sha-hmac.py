@@ -43,7 +43,7 @@ class USE_AES:
         return str(base64.encodebytes(aes.encrypt(self.to_16(text))),
                    encoding='utf8').replace('\n', '')  # 加密
 
-    def decodebytes(self, text):
+    def decode_bytes(self, text):
         aes = self.aes()
         return str(aes.decrypt(base64.decodebytes(bytes(
             text, encoding='utf8'))).rstrip(b'\0').decode("utf8"))  # 解密
@@ -251,7 +251,7 @@ if __name__ == '__main__':
     aes_test = USE_AES("assssssssdfasasasasa")
     a = aes_test.encrypt("测试")
     print(a)
-    b = aes_test.decodebytes(a)
+    b = aes_test.decode_bytes(a)
     print(b)
 
     rsa_test = USE_RSA()
