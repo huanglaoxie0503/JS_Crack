@@ -40,8 +40,8 @@ class USE_AES:
 
     def encrypt(self, text):
         aes = self.aes()
-        return str(base64.encodebytes(aes.encrypt(self.to_16(text))),
-                   encoding='utf8').replace('\n', '')  # 加密
+        # # 加密
+        return str(base64.encodebytes(aes.encrypt(self.to_16(text))), encoding='utf8').replace('\n', '')
 
     def decode_bytes(self, text):
         aes = self.aes()
